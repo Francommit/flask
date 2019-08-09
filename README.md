@@ -1,8 +1,5 @@
 # flask tutorial
 
-# Install Ubuntu, then Microsoft Terminal
-
-
 <!-- Python 3 version, virtual environment support  -->
 sudo apt-get install python3-venv
 python -m venv venv
@@ -29,4 +26,3 @@ flask run
  pip install python-dotenv
 
  <!-- Then you can just write the environment variable name and value in a .flaskenv file in the top-level directory of the project -->
-
