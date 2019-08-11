@@ -31,3 +31,14 @@ this can be done but using this command
 Then you can just write the environment variable name and value in a .flaskenv file in the top-level directory of the project
 
 ## Chapter 2
+
+Templates help achieve this separation between presentation and business logic. In Flask, templates are written as separate files, stored in a templates folder that is inside the application package.
+
+The render_template() function invokes the Jinja2 template engine that comes bundled with the Flask framework. Jinja2 substitutes {{ ... }} blocks with the corresponding values, given by the arguments provided in the render_template() call.
+
+Templates also support control statements, given inside {% ... %}
+
+Jinja2 has a template inheritance feature that specifically addresses this problem. In essence, what you can do is move the parts of the page layout that are common to all templates to a base template, from which all other templates are derived.
+
+Define a base template called base.html that includes a simple navigation bar and also the title logic I implemented earlier.
+
