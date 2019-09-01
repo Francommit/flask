@@ -20,6 +20,7 @@ Let's setup what we need for flask.
 
 Install flask:  
 `pip install flask`  
+` python -m pip install --upgrade pip`
 
 In Python, a sub-directory that includes a __init__.py file is considered a package, and can be imported. When you import a package, the __init__.py executes and defines what symbols the package exposes to the outside world.  
 
@@ -27,7 +28,7 @@ So to run your flask_app you need to usually set environment variables like this
 `set FLASK_APP=microblog.py`  
 
 Then you can run your app handy dandy - http://127.0.0.1:5000/  
-`flask run`
+`flask run`  
 
 **BUT** We want to automatically use these environment variables.  
 This can be done but using this library:  
